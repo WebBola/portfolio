@@ -1,5 +1,6 @@
 <script setup>
 import { reactive } from "vue"
+// import 'dotenv/config'
 
 const formData = reactive({
     name: "",
@@ -9,8 +10,8 @@ const formData = reactive({
 
 const handleSubmit = () => {
 
-    let bot_token = '8242549919:AAF-N7u2WR8XwFPT5_WvyIKAuOuhCZhGMB4';
-    let user_id = '7760337711';
+    let bot_token = import.meta.env.VITE_BOT_TOKEN;
+    let user_id = import.meta.env.VITE_ADMIN_ID;
 
     let msg = `
 ✨ Yangi xabar keldi!

@@ -36,9 +36,9 @@ function scrollToContact() {
                         <button class="btn primary" @click="scrollToContact">
                             <img class="icon" src="/icons/message.png" alt=""> Bog'lanish
                         </button>
-                        <button class="btn outline">
-                            <img class="icon" src="/icons/download.png" alt=""> CV Yuklab olish
-                        </button>
+                        <a href="/Behruz_Qahramonov_CV.pdf" download><button class="btn outline">
+                                <img class="icon" src="/icons/download.png" alt=""> CV Yuklab olish
+                            </button></a>
                     </div>
 
                     <div class="socials">
@@ -54,8 +54,7 @@ function scrollToContact() {
                 <!-- Profile Image -->
                 <div class="image-wrapper">
                     <div class="profile-pic">
-                        <img src="https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-                            alt="Behruz - Frontend Dasturchi" />
+                        <img src="/images/my.png" alt="Behruz - Frontend Dasturchi" />
                     </div>
                     <div class="experience">
                         <p>2+ yil tajriba</p>

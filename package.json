@@ -15,6 +15,8 @@
     "@fontsource/inter": "^5.2.6",
     "@fontsource/roboto": "^5.2.6",
     "@heroicons/vue": "^2.2.0",
+    "dotenv": "^17.2.1",
+    "node-telegram-bot-api": "^0.66.0",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },
