@@ -28,6 +28,7 @@ import '@fontsource/inter/400.css';
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -53,5 +54,42 @@ import '@fontsource/inter/400.css';
 main {
   /* width: 100%; */
   margin: 0 auto;
+}
+
+
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* qora yarim shaffof */
+  backdrop-filter: blur(5px);
+  /* orqa fon blur */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* hamma narsadan ustida */
+}
+
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(0, 0, 0, 0.229);
+  /* sariq shaffof */
+  border-top: 6px solid #000000ff;
+  /* sariq qismi */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 </style>

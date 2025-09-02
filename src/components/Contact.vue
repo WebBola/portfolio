@@ -1,5 +1,5 @@
 <script setup>
-import { reactive } from "vue"
+import { reactive, ref } from "vue"
 // import 'dotenv/config'
 
 const formData = reactive({
@@ -7,6 +7,8 @@ const formData = reactive({
     phone: "",
     message: ""
 })
+
+let loading = ref(false);
 
 const handleSubmit = () => {
 
@@ -23,6 +25,7 @@ ${formData.message}
 -------------------------
 `
 
+    loading.value = true
     fetch(`https://api.telegram.org/bot${bot_token}/sendMessage?chat_id=${user_id}&text=${encodeURIComponent(msg)}`)
         .then(res => {
             if (res.ok) {
@@ -32,6 +35,8 @@ ${formData.message}
                 formData.name = ""
                 formData.phone = ""
                 formData.message = ""
+                loading.value = false
+
             } else {
                 alert("❌ Xabar yuborilmadi. Qaytadan urinib ko‘ring.")
             }
@@ -40,6 +45,12 @@ ${formData.message}
             console.error("Xato:", err)
             alert("❌ Internetda yoki botda muammo bor.")
         })
+        .finally(() => {
+            loading.value = false;
+        });
+
+
+
 }
 
 
@@ -111,7 +122,8 @@ const socialLinks = [
                             </div>
                             <div class="form-group">
                                 <label for="email">Phone *</label>
-                                <input v-model="formData.phone" id="email" type="number" name="email" required
+                                <input v-model="formData.phone" id="phone" name="phone" type="tel" inputmode="numeric"
+                                    pattern="[0-9]{9,20}" minlength="9" maxlength="20" required
                                     placeholder="Telefon raqamingizni kiriting" />
                             </div>
                         </div>
@@ -177,6 +189,10 @@ const socialLinks = [
             </div>
         </div>
     </section>
+
+    <div v-if="loading" class="loader-overlay">
+        <div class="loader"></div>
+    </div>
 </template>
 
 <style scoped>

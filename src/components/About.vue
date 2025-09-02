@@ -32,7 +32,7 @@ const features = ref([
       <span class="badge">Men haqimda</span>
       <h2>Dasturlash - bu mening ehtirosim</h2>
       <p>
-        Men 3 yildan ortiq vaqt davomida veb-dasturlash sohasida ishlayman. 
+        Men 2 yildan ortiq vaqt davomida veb-dasturlash sohasida ishlayman. 
         Zamonaviy texnologiyalar va eng yaxshi amaliyotlardan foydalanib, 
         foydalanuvchilar uchun qulay va chiroyli veb-saytlar yarataman.
       </p>
