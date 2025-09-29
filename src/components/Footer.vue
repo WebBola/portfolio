@@ -28,7 +28,7 @@ const footerLinks = [
       { name: "webdasturchi2009@gmail.com", href: "mailto:webdasturchi2009@gmail.com" },
       { name: "+998 94 021 33 03", href: "tel:+998940213303" },
       { name: "Toshkent, O'zbekiston", href: "https://maps.google.com/?q=Tashkent" },
-      { name: "Telegram", href: "https://t.me/behruz8005" }
+      { name: "Telegram", href: "https://t.me/behruz_dot" }
     ]
   }
 ]
@@ -60,7 +60,7 @@ const scrollToSection = (href) => {
             <a href="https://github.com/WebBola" target="_blank" class="icon-btn">
               <img src="/icons/github.png" alt="GitHub" class="icon" />
             </a>
-            <a href="https://t.me/behruz8005" target="_blank" class="icon-btn">
+            <a href="https://t.me/behruz_dot" target="_blank" class="icon-btn">
               <img src="/icons/telegram.png" alt="Telegram" class="icon" />
             </a>
             <a href="https://www.instagram.com/dyrroth.n1/" target="_blank" class="icon-btn">

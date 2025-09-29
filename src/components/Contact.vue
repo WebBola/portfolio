@@ -85,8 +85,8 @@ const socialLinks = [
     {
         icon: "/icons/telegram.png",
         name: "Telegram",
-        url: "https://t.me/behruz8005",
-        username: "@behruz8005"
+        url: "https://t.me/behruz_dot",
+        username: "@behruz_dot"
     },
     {
         icon: "/icons/instagram.png",

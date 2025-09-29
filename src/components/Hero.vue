@@ -44,7 +44,7 @@ function scrollToContact() {
                     <div class="socials">
                         <a href="https://github.com/WebBola" target="_blank" class="btn"><img class="icon"
                                 src="/icons/github.png" alt=""></a>
-                        <a href="https://t.me/behruz8005" target="_blank" class="btn"><img class="icon"
+                        <a href="https://t.me/behruz_dot" target="_blank" class="btn"><img class="icon"
                                 src="/icons/telegram.png" alt=""></a>
                         <a href="https://www.instagram.com/dyrroth.n1/" target="_blank" class="btn"><img class="icon"
                                 src="/icons/instagram.png" alt=""></a>
